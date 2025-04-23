@@ -179,6 +179,43 @@
         .carousel-control-next-icon {
           background-color: black; 
         }
+
+/* Ensure gallery images scale properly */
+#graphics-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Carousel responsiveness */
+#carouselLandscape img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Optional: adjust spacing for mobile */
+@media (max-width: 768px) {
+  #graphics-gallery .card {
+    margin-bottom: 1rem;
+  }
+
+  #graphics-gallery h2,
+  #landscape-slideshow h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #carouselLandscape {
+    margin-top: 1rem;
+  }
+
+  .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
     
     /* Optional: Adjust image size for smaller devices */
     @media (max-width: 768px) {
@@ -315,7 +352,7 @@
               What matters most to me is being able to create with purpose—whether it’s a clean, functional interface or a graphic that tells a story. I’m always eager to keep learning, stay curious, and do work that’s thoughtful and sincere. </p>
           </div>
           <div class="col-md-6">
-            <img src="https:/./images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Coding" class="img-fluid rounded">
+           <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Coding" class="img-fluid rounded">
           </div>
         </div>
       
@@ -469,61 +506,62 @@
 
 
 
+
 <section id="graphics-gallery" class="section py-5">
   <h2>Graphics Gallery</h2>
   <div class="container">
     <div class="row g-4">
 
       <!-- Replace X with actual image numbers -->
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
         <div class="card border-0 shadow-sm h-100">
           <img src="./images/1.png" class="card-img-top rounded" alt="Graphic 1">
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
         <div class="card border-0 shadow-sm h-100">
           <img src="./images/2.png" class="card-img-top rounded" alt="Graphic 2">
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
         <div class="card border-0 shadow-sm h-100">
           <img src="./images/3.png" class="card-img-top rounded" alt="Graphic 3">
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
         <div class="card border-0 shadow-sm h-100">
           <img src="./images/4.png" class="card-img-top rounded" alt="Graphic 4">
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="./images/5.png" class="card-img-top rounded" alt="Graphic 5">
           </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="./images/6.png" class="card-img-top rounded" alt="Graphic 6">
           </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="./images/7.png" class="card-img-top rounded" alt="Graphic 7">
           </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="./images/8.1.png" class="card-img-top rounded" alt="Graphic 8">
           </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4">
+      <div class="col-6 col-md-4">
           <div class="card border-0 shadow-sm h-100">
             <img src="./images/9.1.png" class="card-img-top rounded" alt="Graphic 9">
           </div>
